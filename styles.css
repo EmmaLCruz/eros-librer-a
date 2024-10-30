@@ -25,10 +25,6 @@ img{
 
 :root{
   --accent-color: #ff0033;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
 }
 
 .container{
@@ -61,6 +57,29 @@ img{
   justify-content: space-between;
   display: none;
 }
+
+.navbar__item {
+  position: relative;
+}
+
+.navbar__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  height: 2px;
+  width: 100%;
+  background: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar__item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /* Fin: Navbar */
 
 /* Inicio: Hero */
@@ -100,8 +119,11 @@ img{
 }
 
 .btn{
+  flex: 1;
+  white-space: nowrap;
+  text-align: center;
   display: inline;
-  max-width: 220px;
+  max-width: 180px;
   padding: 1rem 2rem;
   font-weight: 700;
   letter-spacing: 1.2px;
@@ -359,28 +381,6 @@ textarea{
   display: flex;
   flex-direction: column;
   gap: 1em;
-}
-
-.navbar__item{
-  position: relative;
-}
-
-.navbar__item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -0.5rem;
-  height: 2px;
-  width: 100%;
-  background: var(--accent-color);
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-out;
-}
-
-.navbar__item:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 .footer__social{
