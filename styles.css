@@ -350,7 +350,7 @@ textarea{
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 1.5em;
+  gap: 2em;
   padding-bottom: 2em;
   border-bottom: 1px solid #696969;
 }
@@ -406,6 +406,10 @@ textarea{
   flex-direction: column;
   align-items: center;
   gap: 1em;
+}
+
+.footer__rights{
+  line-height: 1.6;
 }
 
 .footer__author{
