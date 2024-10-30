@@ -62,7 +62,6 @@
   .hero__content{
     text-align: left;
     gap: 2rem;
-    padding-right: 6rem;
   }
 
   .hero__title{
@@ -72,6 +71,11 @@
   .hero__paragraph{
     width: 80%;
   }
+
+  .hero__links{
+    justify-content: start;
+  }
+
   .btn{
     margin-left: 0;
   }
