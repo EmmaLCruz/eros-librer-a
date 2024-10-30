@@ -16,6 +16,10 @@
   }
 
   /* Catálogo */
+  .catalogo__subtitle{
+    text-align: left;
+  }
+  
   .catalogo__cards{
     width: fit-content;
   }
