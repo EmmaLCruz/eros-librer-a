@@ -112,6 +112,10 @@
   }
 
   /* Contacto */
+  .contacto__article{
+    padding-block: 5rem;
+  }
+  
   .contacto__item{
     width: 50%;
   }

@@ -192,7 +192,7 @@ img{
 }
 
 .sobre-nosotros__body{
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.6;
 }
 
@@ -213,6 +213,7 @@ img{
 }
 
 .catalogo__cards{
+  background-image: linear-gradient(to top, rgba(207, 217, 223, .2) 0%, rgba(226, 235, 240, .2) 100%);
   text-align: center;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -296,8 +297,12 @@ img{
 
 /* Inicio: Contacto */
 
+.contacto{
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
 .contacto__article{
-  margin-block: 2em;
+  padding-block: 2em;
   display: flex;
   flex-direction: column;
   justify-content:space-evenly;
