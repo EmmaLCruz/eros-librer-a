@@ -115,4 +115,9 @@
   .contacto__item{
     width: 50%;
   }
+
+  /* Login */
+  .login__article{
+    padding-block: 5rem;
+  }
 }
