@@ -60,7 +60,8 @@
   /* Hero */
   .hero__article{
     flex-direction: row-reverse;
-    margin: auto 5rem;
+    margin-inline: 5rem;
+    padding-block: 5rem;
   }
 
   .hero__content{
@@ -80,6 +81,10 @@
     justify-content: start;
   }
 
+  .hero__img{
+    width: 1200px;
+  }
+
   .btn{
     margin-left: 0;
   }
@@ -93,16 +98,21 @@
     margin: auto 5rem;
   }
 
+  /* Compras Cards */
+  .compras__article{
+    padding-block: 10rem;
+  }
+
+  .compras__article{
+    flex-direction: row;
+  }
+
+  .compras__item{
+    gap: 2em;
+  }
+
   /* Contacto */
   .contacto__item{
     width: 50%;
   }
-}
-
-@media (min-width: 1280px) {
-  /* Laptops y desktops pequeños */
-}
-
-@media (min-width: 1440px) {
-  /* Desktops medianos */
 }

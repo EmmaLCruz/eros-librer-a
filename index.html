@@ -19,12 +19,13 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <div class="scroll-indicator"></div>
-    <header>
+    <!-- Header -->
+    <header class="header" id="header">
       <nav class="navbar">
         <div class="navbar__logo">
           <a
@@ -52,10 +53,11 @@
         </div>
       </nav>
     </header>
+
     <main>
       <!-- Sección Hero -->
-      <section class="hero container" id="home">
-        <article class="hero__article">
+      <section class="hero" id="home">
+        <article class="hero__article container">
           <figure class="hero__img">
             <img
               src="img/people-read-books.png"
@@ -81,6 +83,12 @@
           </div>
         </article>
       </section>
+
+      <div class="go-top-container">
+        <a href="#header" class="go-top-button">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
 
       <!-- Sección Sobre Nosotros -->
       <section class="sobre-nosotros" id="sobre-nosotros">
@@ -225,6 +233,49 @@
         </article>
       </section>
 
+      <!-- Sección Compras Cards -->
+      <section class="compras">
+        <article class="compras__article container">
+          <!-- Item 1 -->
+          <div class="compras__item">
+            <figure class="compras__img">
+              <img src="img/tienda.png" alt="" />
+            </figure>
+            <h2 class="compras__title">Comprá desde cualquier lugar</h2>
+            <p class="compras__paragraph">
+              Sumá los productos que quieras al carrito. Te los llevamos hasta
+              dónde estés.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="compras__item">
+            <figure class="compras__img">
+              <img src="img/tarjeta-de-credito.png" alt="" />
+            </figure>
+            <h2 class="compras__title">Elegí tu medio de pago favorito</h2>
+            <p class="compras__paragraph">
+              Pagá con tarjeta o en efectivo. Tu dinero está protegido con
+              Mercado Pago.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="compras__item">
+            <figure class="compras__img">
+              <img src="img/paquete.png" alt="" />
+            </figure>
+            <h2 class="compras__title">
+              Recibí tus productos en menos de 48 hs
+            </h2>
+            <p class="compras__paragraph">
+              Tus paquetes están seguros. Tenés el respaldo de los envíos con
+              Mercado Libre.
+            </p>
+          </div>
+        </article>
+      </section>
+
       <!-- Sección Contacto -->
       <section class="contacto" id="contacto">
         <article class="contacto__article container">
@@ -362,5 +413,8 @@
       src="https://kit.fontawesome.com/318f1f29f3.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>
