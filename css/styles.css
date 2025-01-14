@@ -348,8 +348,8 @@ input{
 input,
 textarea{
   background-color: #fff;
-  padding: 4px 12px;
-  border-radius: 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
   letter-spacing: .3px;
 }
 
